@@ -21,9 +21,12 @@ Once you've got a completed image, you can run the container outright:
 ```shell
 # Daemon
 sudo docker run -d base/nginx 
+```
 
 #### Interactive
+```shell
 sudo docker run -i -t base/nginx /bin/bash
+```
 
 #### Dockerfile
 Or you can couple the built container as a base for another application within its Dockerfile
@@ -33,6 +36,5 @@ Or you can couple the built container as a base for another application within i
 
 # Set the new application to inherit this container
 FROM base/nginx
-
 ...
 ```
