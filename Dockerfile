@@ -40,3 +40,6 @@ RUN mkdir /usr/local/nginx/conf/sites-available && \
 # Expose some ports
 EXPOSE 80
 
+# Run the container
+CMD service php5-fpm restart && \
+	/usr/local/nginx/sbin/nginx
